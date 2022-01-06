@@ -1,16 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LandingPage/>
+  <Description/>
+  <Experience :career="data.career"/>
+  <Skills :skills="data.skills"/>
+  <Footer />
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import '@/assets/css/tailwind.css'
+import LandingPage from './components/LandingPage.vue'
+import Description from './components/Description.vue'
+import Experience from './components/Experience.vue'
+import Skills from './components/Skills.vue'
+import Footer from './components/Footer.vue'
+import json from  './data/data-resource.json'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LandingPage,
+    Description,
+    Experience,
+    Skills,
+    Footer,
+  },
+  data(){
+    return{
+      data: json
+    }
   }
+  
 }
 </script>
 
@@ -21,6 +41,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>

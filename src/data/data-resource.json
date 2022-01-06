@@ -1,0 +1,92 @@
+{
+    "name": "Gerald Ramos",
+    "position": "Applications Programmer",
+    "career": {
+        "academic": [
+            {
+                "year": "2021 - Present",
+                "title": "Master in Information Technology",
+                "content": "Tarlac State University at Tarlac, Philippines"
+            },
+            {
+                "year": "2015 - 2019",
+                "title": "Bachelor of Science in Information Technology",
+                "content": "Tarlac Agricultural University at Camiling, Tarlac, Philippines"
+            }
+        ],
+        "professional": [
+            {
+                "year": "2019 - Present",
+                "title": "Applications Programmer at MK Themed Attractions Philippines Inc.",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "year": "2021 - Present",
+                "title": "Development of project SICAT at Tarlac Agricutural University",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        ]
+    },
+    "skills": [
+        {
+            "name": "Python",
+            "filename": "python.svg"
+        },
+        {
+            "name": "Jupyter Notebook",
+            "filename": "jupyter.svg"
+        },
+        {
+            "name": "Vue",
+            "filename": "vue.svg"
+        },
+        {
+            "name": "MsSql",
+            "filename": "mssql.svg"
+        },
+        {
+            "name": "MySql",
+            "filename": "mysql.svg"
+        },
+        {
+            "name": "Php",
+            "filename": "php.svg"
+        },
+        {
+            "name": "Unreal Engine",
+            "filename": "unreal-engine.svg"
+        },
+        {
+            "name": "Blender",
+            "filename": "blender.svg"
+        },
+        {
+            "name": "Vb.Net",
+            "filename": "vbnet.svg"
+        },
+        {
+            "name": "Tailwind",
+            "filename": "tailwindcss.svg"
+        },
+        {
+            "name": "Raspberry Pi",
+            "filename": "raspberrypi.svg"
+        },
+        {
+            "name": "Git",
+            "filename": "git.svg"
+        },
+        {
+            "name": "Linux",
+            "filename": "linux.svg"
+        },
+        {
+            "name": "HTML",
+            "filename": "html.svg"
+        },
+        {
+            "name": "CSS",
+            "filename": "css.svg"
+        }
+    ]
+}
