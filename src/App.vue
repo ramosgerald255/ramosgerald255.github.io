@@ -1,4 +1,4 @@
-<template class="scroll-smooth">
+<template>
   <LandingPage />
   <Description />
   <Experience :career="data.career" />
