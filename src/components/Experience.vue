@@ -1,5 +1,5 @@
 <template>
-  <section id="experience" class="exp bg-gray-600 h-auto pb-20">
+  <section id="experience" class="exp bg-gray-600 h-auto pb-20 overflow-hidden">
     <!-- Animate fade down goes here -->
     <div
       class="square xyz-in"

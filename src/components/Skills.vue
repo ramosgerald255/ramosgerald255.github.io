@@ -1,5 +1,5 @@
 <template>
-  <div class="skills h-auto mb-20">
+  <div class="skills h-auto mb-20 overflow-hidden">
     <div
       class="square xyz-in"
       xyz="fade duration-6 delay-2 flip-up-25% up-100%"

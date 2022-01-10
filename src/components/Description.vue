@@ -1,8 +1,9 @@
 <template>
-  <section id="about" class="h-1/3 mb-20">
+  <section id="about" class="h-1/3 mb-20 overflow-hidden">
     <div
       class="square xyz-in"
       xyz="fade duration-6 delay-2 flip-up-25% up-100%"
+      
     >
       <Title :title="'About Me'" :description="'Hope to know you after'"/>
     </div>

@@ -1,23 +1,23 @@
-<template>
-  <LandingPage/>
-  <Description/>
-  <Experience :career="data.career"/>
-  <Skills :skills="data.skills"/>
+<template class="scroll-smooth">
+  <LandingPage />
+  <Description />
+  <Experience :career="data.career" />
+  <Skills :skills="data.skills" />
   <Footer />
 </template>
 
 
 <script>
-import '@/assets/css/tailwind.css'
-import LandingPage from './components/LandingPage.vue'
-import Description from './components/Description.vue'
-import Experience from './components/Experience.vue'
-import Skills from './components/Skills.vue'
-import Footer from './components/Footer.vue'
-import json from  './data/data-resource.json'
+import "@/assets/css/tailwind.css";
+import LandingPage from "./components/LandingPage.vue";
+import Description from "./components/Description.vue";
+import Experience from "./components/Experience.vue";
+import Skills from "./components/Skills.vue";
+import Footer from "./components/Footer.vue";
+import json from "./data/data-resource.json";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     LandingPage,
     Description,
@@ -25,13 +25,12 @@ export default {
     Skills,
     Footer,
   },
-  data(){
-    return{
-      data: json
-    }
-  }
-  
-}
+  data() {
+    return {
+      data: json,
+    };
+  },
+};
 </script>
 
 <style>
