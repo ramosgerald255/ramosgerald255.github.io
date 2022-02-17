@@ -3,7 +3,7 @@
     <!-- Animate fade down goes here -->
     <div
       class="square xyz-in"
-      xyz="fade duration-6 delay-2 flip-up-25% up-100%"
+      xyz="fade duration-6 delay-2 up-100%"
     >
       <Title
         class="title text-white"
@@ -13,7 +13,7 @@
     </div>
     <div
       class="square xyz-in"
-      xyz="fade duration-6 delay-2 flip-down-25% down-100%"
+      xyz="fade duration-6 delay-2 down-100%"
     >
       <div class="container mx-auto px-6">
         <div class="flex space-x-6">
