@@ -10,16 +10,18 @@
         h-full
         m-auto
         items-center
+        text-center
       "
     >
       <div class="wrapper-name w-96">
         <div class="square xyz-in" xyz="fade duration-15 delay-2 right-100%">
-          <h1 class="px-2 py-6 text-4xl uppercase text-white">Gerald Ramos</h1>
+          <h1 class="px-2 py-3 text-2xl lg:text-4xl uppercase text-white">Gerald Ramos</h1>
         </div>
 
-        <hr class="border-white border-solid border-1" />
+        <!-- <hr class="border-white border-solid border-1 w-1/2 text-center" /> -->
+        <div class="w-1/2 border-t-2 mx-auto lg:w-full"/>
         <div class="square xyz-in" xyz="fade duration-15 delay-1 down-100%">
-          <p class="px-2 py-4 text-2xl text-center text-white">
+          <p class="px-2 py-2 text-base lg:text-2xl text-center text-white">
             Applications Programmer
           </p>
         </div>

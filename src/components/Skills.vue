@@ -1,5 +1,5 @@
 <template>
-  <div class="skills h-auto overflow-hidden" id="skills">
+  <div class="skills h-auto overflow-hidden text-center" id="skills">
     <div class="square xyz-in" xyz="fade duration-6 delay-2 up-100%">
       <Title
         class="title text-gray-100"
