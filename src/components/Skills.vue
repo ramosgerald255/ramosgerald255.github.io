@@ -1,11 +1,8 @@
 <template>
-  <div class="skills h-auto mb-20 overflow-hidden">
-    <div
-      class="square xyz-in"
-      xyz="fade duration-6 delay-2 up-100%"
-    >
+  <div class="skills h-auto overflow-hidden" id="skills">
+    <div class="square xyz-in" xyz="fade duration-6 delay-2 up-100%">
       <Title
-        class="title text-gray-800"
+        class="title text-gray-100"
         :title="'Skills'"
         :description="'guess im good at'"
       />
@@ -36,7 +33,7 @@
             :src="require(`../assets/img/logos/${skill.filename}`)"
             alt="image"
           />
-          <h1 class="name text-gray-500 font-semibold text-xs text-center mt-0">
+          <h1 class="name text-gray-100 font-semibold text-xs text-center mt-0">
             {{ skill.name }}
           </h1>
         </div>
@@ -68,5 +65,20 @@ export default {
     Title,
   },
   props: ["skills"],
+  mounted() {
+    window.VANTA.CELLS({
+      el: "#skills",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      color1: 0x8c4100,
+      color2: 0x35f2f2,
+      size: 1.6,
+      speed: 2.4,
+    });
+  },
 };
 </script>

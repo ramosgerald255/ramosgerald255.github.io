@@ -36,15 +36,29 @@ export default {
   props: ["user"],
   mounted() {
     // window.VANTA.HALO("#header");
-    window.VANTA.HALO({
+    // window.VANTA.HALO({
+    //   el: "#header",
+    //   mouseControls: true,
+    //   touchControls: true,
+    //   gyroControls: false,
+    //   minHeight: 200.0,
+    //   minWidth: 200.0,
+    //   amplitudeFactor: 1.7,
+    //   size: 2.7,
+    // });
+    window.VANTA.FOG({
       el: "#header",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
       minHeight: 200.0,
       minWidth: 200.0,
-      amplitudeFactor: 1.7,
-      size: 2.7,
+      highlightColor: 0x1e00ff,
+      midtoneColor: 0xff00b4,
+      lowlightColor: 0xff1e,
+      baseColor: 0x8c81d7,
+      blurFactor: 0.63,
+      speed: 1.7,
     });
   },
 };

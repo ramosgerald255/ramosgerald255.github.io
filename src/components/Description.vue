@@ -1,27 +1,20 @@
 <template>
   <section id="about" class="h-1/3 mb-20 overflow-hidden">
-    <div
-      class="square xyz-in"
-      xyz="fade duration-6 delay-2 up-100%"
-      
-    >
-      <Title :title="'About Me'" :description="'Hope to know you after'"/>
+    <div class="square xyz-in" xyz="fade duration-6 delay-2 up-100%">
+      <Title :title="'About Me'" :description="'Hope to know you after'" />
     </div>
-    <div
-      class="square xyz-in"
-      xyz="fade duration-8 delay-2.5 right-100%"
-    >
+    <div class="square xyz-in" xyz="fade duration-8 delay-2.5 right-100%">
       <div class="section-content">
         <div class="row">
           <Photo />
         </div>
         <div class="grid grid-cols-2 mt-3">
-            <div class="presentation mr-auto align-middle mt-2 text-left mx-20">
-                <Presentation/>
-            </div>
-            <div class="presentation mr-auto align-middle mt-2 text-left mx-20">
-                <PersonalCard/>
-            </div>
+          <div class="presentation mr-auto align-middle mt-2 text-left mx-20">
+            <Presentation />
+          </div>
+          <div class="presentation mr-auto align-middle mt-2 text-left mx-20">
+            <PersonalCard />
+          </div>
         </div>
       </div>
       <!-- <h1>Something goes here</h1> -->
@@ -32,8 +25,8 @@
 </template>
 <script>
 import Title from "./Title.vue";
-import PersonalCard from './PersonalCard.vue'
-import Presentation from './Presentation.vue'
+import PersonalCard from "./PersonalCard.vue";
+import Presentation from "./Presentation.vue";
 import Photo from "./Photo.vue";
 export default {
   name: "AboutMe",
@@ -43,6 +36,18 @@ export default {
     PersonalCard,
     Presentation,
     Photo,
+  },
+  mounted() {
+    // window.VANTA.RINGS({
+    //   el: "#about",
+    //   mouseControls: true,
+    //   touchControls: true,
+    //   gyroControls: false,
+    //   minHeight: 200.0,
+    //   minWidth: 200.0,
+    //   scale: 1.0,
+    //   scaleMobile: 1.0,
+    // });
   },
 };
 </script>
