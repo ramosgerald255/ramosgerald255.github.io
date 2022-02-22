@@ -1,8 +1,8 @@
 <template>
-  <LandingPage />
-  <Description />
-  <Experience :career="data.career" />
-  <Skills :skills="data.skills" />
+  <LandingPage id="landingPage" :isActive="$data.landingOnscreen" />
+  <Description id="description" :isActive="$data.aboutOnscreen" />
+  <Experience id="career" :career="data.career" :isActive="$data.expOnscreen" />
+  <Skills id="skills" :skills="data.skills" :isActive="$data.skillsOnscreen" />
   <Footer />
 </template>
 
@@ -28,7 +28,47 @@ export default {
   data() {
     return {
       data: json,
+      landingOnscreen: null,
+      aboutOnscreen: null,
+      expOnscreen: null,
+      skillsOnscreen: null,
     };
+  },
+  mounted() {
+    this.landingObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.landingOnscreen = true;
+        this.aboutOnscreen = false;
+      } else {
+        this.landingOnscreen = false;
+        this.aboutOnscreen = true;
+      }
+    }).observe(document.querySelector("#landingPage"));
+
+    this.aboutObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.aboutOnscreen = true;
+      } else {
+        this.aboutOnscreen = false;
+      }
+    }).observe(document.querySelector("#description"));
+
+    this.expObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.expOnscreen = true;
+      } else {
+        this.expOnscreen = false;
+      }
+    }).observe(document.querySelector("#career"));
+
+    this.skillsObserver = new IntersectionObserver(([entry]) => {
+      entry.intersectionRatio.valueOf(0)
+      if (entry && entry.isIntersecting) {
+        this.skillsOnscreen = true;
+      } else {
+        this.skillsOnscreen = false;
+      }
+    }).observe(document.querySelector("#skills"));
   },
 };
 </script>

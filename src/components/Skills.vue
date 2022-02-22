@@ -1,6 +1,6 @@
 <template>
   <div class="skills h-auto overflow-hidden text-center" id="skills">
-    <div class="square xyz-in" xyz="fade duration-6 delay-2 up-100%">
+    <div class="square " :class="{'xyz-in': isActive, 'xyz-out': !isActive}" xyz="fade duration-6 delay-2 up-100%">
       <Title
         class="title text-gray-100"
         :title="'Skills'"
@@ -10,14 +10,14 @@
 
     <div
       class="flex flex-wrap items-center px-auto mx-auto justify-center"
-      xyz="fade small stagger-0.5"
+      xyz="fade small stagger-0.5 delay-6 duration-5"
     >
       <div
-        class="card p-1 mb-2 xyz-in"
+        class="card p-1 mb-2 " :class="{'xyz-in': isActive, 'xyz-out': !isActive}"
         v-for="(skill, index) in skills"
         :key="index"
       >
-        <div class="xyz-in">
+        <div>
           <img
             class="
               img
@@ -64,7 +64,7 @@ export default {
   components: {
     Title,
   },
-  props: ["skills"],
+  props: ["skills", "isActive"],
   mounted() {
     window.VANTA.CELLS({
       el: "#skills",
