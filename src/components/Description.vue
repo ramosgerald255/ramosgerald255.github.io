@@ -37,9 +37,6 @@
           </div>
         </div>
       </div>
-      <!-- <h1>Something goes here</h1> -->
-      <!-- Presentation Section -->
-      <!-- Personal Card Section -->
     </div>
   </section>
 </template>
@@ -48,7 +45,6 @@ import Title from "./Title.vue";
 import PersonalCard from "./PersonalCard.vue";
 import Presentation from "./Presentation.vue";
 import Photo from "./Photo.vue";
-// export {aboutStatus}
 export default {
   name: "AboutMe",
   props: ['isActive',],
@@ -64,20 +60,6 @@ export default {
     };
   },
   mounted() {
-    // this.observer = new IntersectionObserver(([entry2]) => {
-    //   if (entry2 && entry2.isIntersecting) {
-    //     this.$data.aboutStatus = true;
-    //     // entry2.isIntersecting.valueOf(true)
-    //     console.log("About is intersecting", entry2.isIntersecting);
-    //   } else {
-    //     this.$data.aboutStatus = false;
-    //     // entry2.isIntersecting.valueOf(false)
-    //     console.log("About is not intersecting", entry2.isIntersecting);
-    //     entry2.target.classList.remove("in-viewport");
-    //   }
-    // });
-
-    // this.observer.observe(document.querySelector("#about"));
   },
 };
 </script>

@@ -41,7 +41,6 @@
 </template>
 
 <script>
-// import {aboutStatus} from 'Description'
 export default {
   name: "LandingPage",
   props: ["user", "isActive"],
@@ -67,17 +66,6 @@ export default {
       speed: 1.7,
     });
     console.log(this.isActive)
-    // this.observer = new IntersectionObserver(([entry]) => {
-    //   if (entry && entry.isIntersecting) {
-    //     this.$data.status = true;
-    //     // console.log("header is intersecting", this.$data.status);
-    //   } else {
-    //     this.$data.status = false;
-    //     // console.log("header is not intersecting", this.$data.status);
-    //   }
-    // });
-    
-    // this.observer.observe(document.querySelector('#header'));
   },
 };
 </script>

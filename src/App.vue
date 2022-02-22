@@ -38,16 +38,18 @@ export default {
     this.landingObserver = new IntersectionObserver(([entry]) => {
       if (entry && entry.isIntersecting) {
         this.landingOnscreen = true;
-        this.aboutOnscreen = false;
+        // this.aboutOnscreen = false;
       } else {
         this.landingOnscreen = false;
-        this.aboutOnscreen = true;
+        // this.aboutOnscreen = true;
       }
     }).observe(document.querySelector("#landingPage"));
 
     this.aboutObserver = new IntersectionObserver(([entry]) => {
       if (entry && entry.isIntersecting) {
         this.aboutOnscreen = true;
+        // this.landingOnscreen = false
+        // this.expOnscreen = false
       } else {
         this.aboutOnscreen = false;
       }
@@ -56,6 +58,8 @@ export default {
     this.expObserver = new IntersectionObserver(([entry]) => {
       if (entry && entry.isIntersecting) {
         this.expOnscreen = true;
+        // this.aboutOnscreen = false
+        // this.skillsOnscreen = false
       } else {
         this.expOnscreen = false;
       }
@@ -65,6 +69,7 @@ export default {
       entry.intersectionRatio.valueOf(0)
       if (entry && entry.isIntersecting) {
         this.skillsOnscreen = true;
+        // this.expOnscreen = false
       } else {
         this.skillsOnscreen = false;
       }

@@ -43,8 +43,6 @@
 </template>
 <script>
 import Title from "./Title.vue";
-// import git from "../assets/img/logos/git.svg"
-// const loc = '../assets/img/logos/'
 import { ref, watch } from "vue";
 export default {
   name: "Skills",
