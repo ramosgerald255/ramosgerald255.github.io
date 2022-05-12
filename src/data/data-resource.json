@@ -16,7 +16,7 @@
         ],
         "professional": [
             {
-                "year": "2019 - Present",
+                "year": "2019 - 2022",
                 "title": "Applications Programmer at MK Themed Attractions Philippines Inc.",
                 "content": "Applications Programmer specializing in software and applications development. Well-versed in numerous programming languages including Python 3, PHP, JavaScript, Vb.Net, SQL, Vue, Laravel and micro controllers. Strong background in project management, version control, and customer relations."
             },
@@ -24,6 +24,11 @@
                 "year": "2021 - Present",
                 "title": "Development of project SICAT at Tarlac Agricutural University",
                 "content": "Develop a forecasting webapp that may help to predict rice yield in the province of tarlac based from a given satellite data. It involves machine learning and image processing to forecast and identify crops based on a given satellite image."
+            },
+            {
+                "year": "2022 - Present",
+                "title": "FrontEnd Applications Developer at Circle Moves",
+                "content": "Develop payment systems application with nfc technology integrations."
             }
         ]
     },
@@ -87,6 +92,27 @@
         {
             "name": "CSS",
             "filename": "css.svg"
+        },
+        {
+            "name": "Android Studio",
+            "filename": "android-studio.svg"
+        },
+        {
+            "name": "Kotlin",
+            "filename": "kotlin.svg"
+        },
+        {
+            "name": "MVVM",
+            "filename": "mvvm.svg"
+        },
+        {
+            "name": "NFC",
+            "filename": "nfc.svg"
+        }
+        ,
+        {
+            "name": "Jetpack Compose",
+            "filename": "jetpack.svg"
         }
     ]
 }
