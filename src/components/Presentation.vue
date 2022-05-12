@@ -1,20 +1,19 @@
 <template>
-    <div class="paragraph">
-        <h3 class="title uppercase text-lg font-semibold">
-            who am i?
-        </h3>
-        <br>
-        <div class="begin">
-
-        </div>
-        <p class="content font-light text-sm leading-normal mt-0 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </div>
+  <div class="paragraph">
+    <h3 class="title uppercase text-lg font-semibold mx-7">who am i?</h3>
+    <br />
+    <div class="begin"></div>
+    <p class="content font-light text-sm leading-normal mb-4 mx-7">
+      Im Gerald U. Ramos, from Camiling Tarlac. I'd like to discover new
+      technologies and right now im into mixing geology and machine learning.
+      I'm 22 years old and also into travelling specially on two wheels. Looking
+      forward to work with you.
+    </p>
+  </div>
 </template>
 <script>
 export default {
-    name: "Presentation",
-    setup() {
-        
-    },
-}
+  name: "Presentation",
+  setup() {},
+};
 </script>

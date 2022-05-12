@@ -1,8 +1,8 @@
 <template>
-  <LandingPage />
-  <Description />
-  <Experience :career="data.career" />
-  <Skills :skills="data.skills" />
+  <LandingPage id="landingPage" :isActive="$data.landingOnscreen" />
+  <Description id="description" :isActive="$data.aboutOnscreen" />
+  <Experience id="career" :career="data.career" :isActive="$data.expOnscreen" />
+  <Skills id="skills" :skills="data.skills" :isActive="$data.skillsOnscreen" />
   <Footer />
 </template>
 
@@ -28,18 +28,54 @@ export default {
   data() {
     return {
       data: json,
+      landingOnscreen: null,
+      aboutOnscreen: null,
+      expOnscreen: null,
+      skillsOnscreen: null,
     };
+  },
+  mounted() {
+    this.landingObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.landingOnscreen = true;
+        // this.aboutOnscreen = false;
+      } else {
+        this.landingOnscreen = false;
+        // this.aboutOnscreen = true;
+      }
+    }).observe(document.querySelector("#landingPage"));
+
+    this.aboutObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.aboutOnscreen = true;
+        // this.landingOnscreen = false
+        // this.expOnscreen = false
+      } else {
+        this.aboutOnscreen = false;
+      }
+    }).observe(document.querySelector("#description"));
+
+    this.expObserver = new IntersectionObserver(([entry]) => {
+      if (entry && entry.isIntersecting) {
+        this.expOnscreen = true;
+        // this.aboutOnscreen = false
+        // this.skillsOnscreen = false
+      } else {
+        this.expOnscreen = false;
+      }
+    }).observe(document.querySelector("#career"));
+
+    this.skillsObserver = new IntersectionObserver(([entry]) => {
+      entry.intersectionRatio.valueOf(0)
+      if (entry && entry.isIntersecting) {
+        this.skillsOnscreen = true;
+        // this.expOnscreen = false
+      } else {
+        this.skillsOnscreen = false;
+      }
+    }).observe(document.querySelector("#skills"));
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  /* margin-top: 60px; */
-}
-</style>
+
